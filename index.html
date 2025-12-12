@@ -2,32 +2,27 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <title>Netforce App</title>
+  <title>Netforce – App simple</title>
 </head>
 <body>
 
-<h1>Netforce – App simple</h1>
+  <h1>Netforce – App simple</h1>
 
-<div id="auth">
-  <input id="email" placeholder="Email" />
-  <input id="password" type="password" placeholder="Mot de passe" />
-  <button id="login">Login</button>
-  <button id="register">Register</button>
-</div>
+  <!-- AUTH -->
+  <div id="auth">
+    <input id="email" type="email" placeholder="Email" />
+    <input id="password" type="password" placeholder="Mot de passe" />
+    <button id="login">Login</button>
+    <button id="register">Register</button>
+  </div>
 
-<hr />
+  <!-- APP -->
+  <div id="app" style="display:none;">
+    <p id="user"></p>
+    <button id="logout">Logout</button>
+    <ul id="items"></ul>
+  </div>
 
-<div id="app" style="display:none">
-  <p id="user"></p>
-
-  <input id="itemInput" placeholder="Nouvel item" />
-  <button id="addItem">Ajouter</button>
-
-  <ul id="items"></ul>
-
-  <button id="logout">Logout</button>
-</div>
-
-<script type="module" src="app.js"></script>
+  <script type="module" src="./app.js"></script>
 </body>
 </html>
